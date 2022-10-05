@@ -1,0 +1,42 @@
+.title {
+  color: #323142;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 800;
+  margin: 50px 0 20px 3vw
+}
+.main {
+  border-left: 1px solid #e6e6e6;
+  height: 100%
+}
+.tasty{
+  left: -28px;
+  position: relative;
+  top: -5px
+}
+.header {
+  display: block
+}
+.category_title {
+  color: #323142;
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0 0 0 3vw
+}
+.meals {
+  animation-duration: 1s;
+  animation-name: moveup;
+  animation-timing-function: ease;
+  margin: 80px 0 0 3vw
+}
+@keyframes moveup {
+  from {margin: 100px 0 0 3vw}
+  to {margin: 80px 0 0 3vw}
+}
+hr {
+  color: #bfbfbf;
+  margin: 0 0 0 170px;
+  position: relative;
+  top: -15px;
+  width: 67vw
+}

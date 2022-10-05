@@ -1,0 +1,27 @@
+.cart {
+  border-left: 1px solid #e6e6e6;
+  height: 100%;
+  padding: 0 0 0 3vw
+}
+.cart_heading {
+  background-color: #fff;
+  color: #323142;
+  display: block;
+  font-size: 30px;
+  font-weight: 800;
+  padding: 50px 0 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1
+}
+table, tr {
+  border-bottom: 1px solid #e6e6e6
+}
+.cart_empty {
+  color: #999;
+  font-size: 15px;
+  padding: 40px 0 0 0
+}
+.cart_empty_img {
+  margin: 80px 0 0
+}

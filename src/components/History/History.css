@@ -1,0 +1,38 @@
+.history {
+  border-left: 1px solid #e6e6e6;
+  height: 100%;
+  padding: 0 0 50px 3vw
+}
+.history_title {
+  color: #323142;
+  font-size: 30px;
+  font-weight: 800;
+  padding: 50px 0 30px;
+}
+.loading {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%)
+}
+.history_key {
+  background-color: #323142;
+  color: #fff;
+  font-size: 15px;
+  padding: 20px 15px
+}
+.order_id{
+  width: 20.2vw
+}
+.items {
+  width: 23.4vw
+}
+.order_date {
+  width: 10.2vw
+}
+.order_time {
+  width: 10vw
+}
+.total_amount {
+  width: 12.2vw
+}

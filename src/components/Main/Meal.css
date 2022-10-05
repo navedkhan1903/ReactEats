@@ -1,0 +1,64 @@
+.meal {
+  border: 1px solid #e6e6e6;
+  border-radius: 30px;
+  box-shadow: 0 0 15px #f2f2f2;
+  display: inline-block;
+  margin: 0 3.4vw 100px 0;
+  padding: 20px;
+  width: 240px
+}
+.meal.added {
+  background-color: #f1f0f4;
+  border: 1px solid #323142
+}
+.meal_title {
+  color: #323142;
+  font-size: 16px;
+  font-weight: 800
+}
+.meal_subtitle {
+  color: #999;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px 0 0
+}
+.meal_subtitle.added {
+  color: gray
+}
+.meal_price {
+  color: #323142;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 15px 0 0
+}
+.meal_image {
+  cursor: zoom-in;
+  margin: -90px 0 20px
+}
+.zoomed_image {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%)
+}
+.image_modal {
+  display: none
+}
+.image_modal_active {
+  animation-duration: .1s;
+  animation-name: zoom;
+  animation-timing-function: ease;
+  background-color: rgba(0,0,0,0.75);
+  display: visible;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1
+}
+@keyframes zoom {
+  from {opacity: 0}
+  to {opacity: 1}
+}

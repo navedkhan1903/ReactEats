@@ -1,0 +1,18 @@
+.sidenav {
+  position: sticky;
+  top: 60px
+}
+.user_image {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0 0;
+  width: 100%
+}
+.username {
+  color: #323142;
+  display: flex;
+  font-size: 17px;
+  justify-content: center;
+  margin: 10px 0 40px;
+  width: 100%
+}

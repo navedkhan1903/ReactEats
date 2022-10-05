@@ -1,0 +1,25 @@
+.category_item {
+  border-radius: 30px;
+  box-shadow: 0 10px 15px #f2f2f2;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 1vw;
+  padding: 25px 0;
+  transition-duration: .1s;
+  width: 7.7vw
+}
+.category_item.active {
+  background-color: #f1f0f4;
+  border: 1px solid #323142;
+  box-shadow: none;
+  transform: scale(1.1)  
+}
+.category_item_text {
+  color: gray;
+  font-size: 13px;
+  padding: 15px 0 0;
+  transition-duration: .1s
+}
+.category_item_text.active {
+  color: #323142
+}
