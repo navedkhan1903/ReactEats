@@ -1,11 +1,10 @@
 .nav_item {
   border-radius: 20px;
-  color: gray;
   cursor: pointer;
   font-size: 13px;
   margin: 20px 2.5vw;
   padding: 15px 0;
-  transition-duration: .1s
+  transition-duration: .2s
 }
 .nav_item.active {
   background-color: #f1f0f4;
@@ -16,8 +15,8 @@
   border-radius: 20px;
   display: inline;
   margin: 0 1.5vw 0 0;
-  padding: 16px;
-  transition-duration: .1s
+  padding: 16px 16px 18px;
+  transition-duration: .2s
 }
 .nav_item_image.active {
   border: 1px solid #323142;

@@ -1,0 +1,22 @@
+.user_img {
+  margin: -20px 5px 0 0;
+  display: inline-block;
+}
+.user_name {
+  position: relative;
+  top: -5px;
+}
+.review {
+  border-bottom: 1px solid #e2e2e2;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+  white-space: pre-wrap;
+  padding: 10px 0px 20px 0
+}
+.review_stars {
+  margin: -10px 0;
+}
+.name_stars {
+  display: inline-block;
+}

@@ -7,14 +7,33 @@
   padding: 20px;
   width: 240px
 }
+@media screen and (max-width: 1897px) {.meal {width: 16.4vw;}}
+@media screen and (max-width: 1441px) {.meal {width: 16.3vw;}}
+@media screen and (max-width: 1199px) {.meal {width: 20.4vw;}}
+@media screen and (max-width: 1153px) {.meal {width: 28.2vw;}}
+@media screen and (max-width: 831px) {.meal {width: 43.4vw;}}
+@media screen and (max-width: 534px) {.meal {width: 90vw;}}
 .meal.added {
   background-color: #f1f0f4;
   border: 1px solid #323142
 }
 .meal_title {
-  color: #323142;
   font-size: 16px;
   font-weight: 800
+}
+.rating {
+  border-bottom: 1px dashed #ccc;
+  padding: 0 0 10px 0
+}
+.meal_rating {
+  color: #999;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0 0 0 3px
+}
+.meal_rating.added {
+  color: gray
 }
 .meal_subtitle {
   color: #999;
@@ -26,29 +45,19 @@
   color: gray
 }
 .meal_price {
-  color: #323142;
   display: inline-block;
   font-size: 20px;
   font-weight: 800;
   padding: 15px 0 0
 }
 .meal_image {
-  cursor: zoom-in;
   margin: -90px 0 20px
 }
-.zoomed_image {
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%,-50%)
-}
-.image_modal {
+.modal {
   display: none
 }
-.image_modal_active {
-  animation-duration: .1s;
-  animation-name: zoom;
-  animation-timing-function: ease;
+.modal_active {
+  animation: zoom_in 0.1s ease;
   background-color: rgba(0,0,0,0.75);
   display: visible;
   height: 100%;
@@ -58,7 +67,17 @@
   width: 100%;
   z-index: 1
 }
-@keyframes zoom {
+@keyframes zoom_in {
   from {opacity: 0}
   to {opacity: 1}
+}
+.info {
+  color: #999;
+  cursor: pointer;
+  float: right;
+  position: relative;
+  top: 4px;
+}
+.info.added{
+  color: gray;
 }

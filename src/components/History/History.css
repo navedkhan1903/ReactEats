@@ -1,20 +1,16 @@
 .history {
+  animation: opacity_transition .2s ease;
   border-left: 1px solid #e6e6e6;
   height: 100%;
+  opacity: 1;
   padding: 0 0 50px 3vw
 }
 .history_title {
-  color: #323142;
   font-size: 30px;
   font-weight: 800;
-  padding: 50px 0 30px;
+  padding: 50px 0 30px
 }
-.loading {
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%,-50%)
-}
+@media screen and (max-width:1200px) {.history_title{padding: 70px 0 30px}}
 .history_key {
   background-color: #323142;
   color: #fff;
@@ -22,17 +18,32 @@
   padding: 20px 15px
 }
 .order_id{
-  width: 20.2vw
+  width: 20.2vw;
+  word-break: break-all;
 }
+@media screen and (max-width:1200px) {.order_id{width: 18vw}}
 .items {
-  width: 23.4vw
+  width: 23.6vw
 }
+@media screen and (max-width:1200px) {.items{width: 18vw}}
 .order_date {
-  width: 10.2vw
+  width: 10.2vw;
+  word-break: break-all;
 }
+@media screen and (max-width:1200px) {.order_date{width: 18vw}}
 .order_time {
   width: 10vw
 }
+@media screen and (max-width:1200px) {.order_time{width: 18vw}}
 .total_amount {
   width: 12.2vw
+}
+@media screen and (max-width:1200px) {.order_amount{width: 18vw}}
+.history_items {
+  animation: history_moveup 1s ease;
+  margin: 0;
+}
+@keyframes history_moveup {
+  from {margin: 50px 0 0 0}
+  to {margin: 0}
 }

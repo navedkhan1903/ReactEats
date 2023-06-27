@@ -1,0 +1,61 @@
+.summ {
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 0 15px #f2f2f2;
+  padding: 20px;
+  position: fixed;
+  top: 23vh;
+  width: 24vw
+}
+@media screen and (max-width:1200px) {.summ{margin: 100px 0 50px 0; position: initial; width: 91vw;}}
+.summ_label {
+  font-size: 13px;
+  padding: 0 5px 0 0
+}
+.coupon_i {
+  cursor: pointer
+}
+.summ_input {
+  border: 1px solid #e6e6e6;
+  font-feature-settings: 'lnum' 1;
+  font-size: 13px;
+  font-weight: 700;
+  margin: 10px 0 0;
+  padding: 10px;
+  width: 60%
+}
+@media screen and (max-width:1200px) {.summ_input{width: 79.6%}}
+.summ_input:focus {
+  outline: 2px solid #323142
+}
+.apply_button {
+  color: #fff;
+  background-color: #323142;
+  border: none;
+  font-size: 13px;
+  font-weight: 700;
+  margin: 0 0 0 1.5vw;
+  padding: 11px 0;
+  width: 31.5%
+}
+@media screen and (max-width:1200px) {.apply_button{width: 15vw}}
+.checkout_button {
+  color: #fff;
+  background-color: #323142;
+  border: none;
+  font-size: 13px;
+  font-weight: 700;
+  margin: 20px 0 0;
+  padding: 11.5px 0;
+  width: 100%
+}
+.coupon {
+  border-bottom: 1px dashed #ccc;
+  padding: 0 0 20px
+}
+.coupon_error {
+  color: red;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 0 0 0 5px
+}

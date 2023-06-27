@@ -1,38 +1,37 @@
 .ls {
-  width: 450px;
   background-color: #fff;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%,-50%);
   border-radius: 20px;
+  width: 450px
 }
+@media screen and (max-width:500px) {.ls{width: 90vw;}}
 .ls_title {
   font-size: 30px;
-  padding: 50px;
+  padding: 50px
 }
 .ls_input {
-  padding: 10px 0 10px 30px;
-  width: 350px;
-  margin: 0 0 30px;
   border: none;
   border-bottom: 1px solid #bfbfbf;
+  margin: 0 10px 30px -12px;
+  padding: 10px 0 10px 30px;
+  width: 350px
 }
+@media screen and (max-width:500px) {.ls_input{width: 70vw;}}
 .ls_input:focus {
-  outline: none;
   border-bottom: 1px solid #323142;
+  outline: none
 }
 .ls_button {
-  color: #fff;
   background-color: #323142;
   border: none;
   border-radius: 5px;
+  color: #fff;
   font-size: 15px;
   font-weight: 500;
-  margin: 20px 0 20px;
+  margin: 20px 0;
   padding: 15px 0;
   width: 350px
 }
+@media screen and (max-width:500px) {.ls_button{width: 70vw;}}
 .ls_sub {
   font-size: 15px;
   font-weight: 500;
@@ -43,7 +42,23 @@
   font-weight: 800;
 }
 .ls_img {
-  position: relative;
-  left: 20px;
   bottom: 1px;
+  left: 10px;
+  position: relative;
+}
+.invalid {
+  color: red;
+  font-size: 11px;
+  font-weight: 600;
+  margin: -29px 0 0 55.5px;
+  position: absolute
+}
+@media screen and (max-width:1200px) { .invalid{margin: -29px 0 0 48px;  }}
+.invalid_img {
+  margin: 0 13px 0 0;
+}
+.eye {
+  cursor: pointer;
+  margin: 12px 0 0 -30px;
+  position: absolute
 }

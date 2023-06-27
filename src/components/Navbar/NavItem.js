@@ -1,24 +1,20 @@
-import { useState } from 'react';
 import './NavItem.css';
+import { useState } from 'react';
 
-export default function NavItem(props) {
-  const [active, setActive] = useState(props.status);
-
-  function onEnterHandler() { setActive("1"); }
-  function onLeaveHandler() { setActive(props.status); }
-  function navNameHandler() { props.onGetNav(props.value); }
+export default function NavItem({ icon, status, value, onGetNav }) {
+  const IconTag = icon;
+  const [active, setActive] = useState(status);
 
   return (
     <div
-      className={`nav_item ${active === "1" ? 'active' : ''} `}
-      onMouseEnter={onEnterHandler}
-      onMouseLeave={onLeaveHandler}
-      onClick={navNameHandler}>
+      className={`nav_item sec ${active === "1" ? 'active' : ''} `}
+      onMouseEnter={() => setActive("1")}
+      onMouseLeave={() => setActive(status)}
+      onClick={() => onGetNav(value)}>
       <div className={`nav_item_image ${active === "1" ? 'active' : ''} `}>
-        {active === "1" && <img src={`./images/${props.name}_active.png`} height="16px" />}
-        {active === "0" && <img src={`./images/${props.name}.png`} height="16px" />}
+        <IconTag size="20" color={active === "1" ? 'white' : '#808080'} />
       </div>
-      {props.value}
+      {value}
     </div>
   )
 }

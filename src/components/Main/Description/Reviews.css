@@ -1,0 +1,21 @@
+.review_title {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0 0 30px 0
+}
+.add_review {
+  display: inline-block;
+  background-color: #f2f2f2;
+  position: relative;
+  top: -3px;
+  border-radius: 30px;
+  margin: 0 0 0 15px;
+  padding: 0 4.5px 1px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.add_review:hover {
+  background-color: #e6e6e6;
+  transition: 0.2s;
+}

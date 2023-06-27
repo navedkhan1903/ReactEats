@@ -1,7 +1,8 @@
 .sidenav {
   position: sticky;
-  top: 60px
+  top: 60px;
 }
+@media screen and (max-width:1200px) {.sidenav{display: none;}}
 .user_image {
   display: flex;
   justify-content: center;
@@ -9,10 +10,42 @@
   width: 100%
 }
 .username {
-  color: #323142;
   display: flex;
   font-size: 17px;
   justify-content: center;
-  margin: 10px 0 40px;
-  width: 100%
+  margin: 10px 0 40px 20px;
+  overflow: hidden;
+  width: 85%
+}
+.topnav {
+  background-color: #fff;
+  box-shadow: 0 10px 10px #f2f2f2;
+  height: auto;
+  margin: 0 0 20px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+@media screen and (min-width:1200px) {.topnav{display: none;}}
+.topnav.visible {
+  height: 350px;
+}
+.lines {
+  margin: 15px;
+}
+.topnav_name {
+  display: inline-block;
+  height: 25px;
+  overflow: hidden;
+  position: absolute;
+  top: 13px;
+}
+.topnav_items {
+  display: none;
+}
+.topnav_items.visible {
+  display: initial;
+}
+Link {
+  text-decoration: none;
 }

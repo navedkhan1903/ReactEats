@@ -1,0 +1,13 @@
+.summ_key {
+  display: inline-block;
+  font-size: 13px;
+  padding: 20px 0 0
+}
+.summ_value {
+  float: right;
+  font-size: 13px;
+  padding: 20px 0 0
+}
+.summ_value.code {
+  color: #4DAF7C
+}

@@ -1,33 +1,32 @@
+import './Meal.css';
 import AddMeal from './AddMeal';
 import { useState } from 'react';
-import './Meal.css';
+import MealDisc from './Description/MealDisc';
+import { AiTwotoneStar } from 'react-icons/ai';
+import { RiInformationLine } from 'react-icons/ri';
 
-export default function Meal(props) {
-  const [item, setItem] = useState(parseInt(localStorage.getItem(props.title)));
-  const [zoom, setZoom] = useState(0);
-
-  function zoomHandler() { setZoom(1); }
-  function resetZoomHandler() { setZoom(0); }
-  function getItemHandler(props) { setItem(props) }
+export default function Meal({ title, quantity, disc, price, name, rating, type, disc1, disc2, nutrition }) {
+  const [zoom, setZoom] = useState("0");
+  const [item, setItem] = useState(parseInt(localStorage.getItem(title)));
 
   return (
     <>
-      <div className={`${zoom === 1 ? 'image_modal_active' : 'image_modal'}`} onClick={resetZoomHandler}>
-        <img src={`./images/${props.name}.png`} height="260px" className="zoomed_image" />
-      </div>
+      {zoom === "1" && <div className={`${zoom === "1" ? 'modal_active' : 'modal'}`}>
+        <MealDisc closeModal={() => setZoom("0")} title={title} quantity={quantity} disc={disc} price={price} name={name} rating={rating} type={type} disc1={disc1} disc2={disc2} nutrition={nutrition} />
+      </div>}
       <div className={`meal ${item > 0 ? 'added' : ''}`}>
         <center>
-          <img
-            src={`./images/${props.name}.png`}
-            height="130px"
-            className="meal_image"
-            onClick={zoomHandler} />
+          <img src={`./images/${name}.png`} height="130px" className="meal_image" />
         </center>
-        <div className="meal_title">{props.title}</div>
-        <div className={`meal_subtitle ${item > 0 ? 'added' : ''}`}>{props.quantity}</div>
-        <div className={`meal_subtitle ${item > 0 ? 'added' : ''}`}>{props.disc}</div>
-        <div className="meal_price">₹{props.price}</div>
-        <AddMeal title={props.title} onGetItem={getItemHandler} />
+        <div className="meal_title primary">{title}</div>
+        <div className='rating'>
+          <AiTwotoneStar color='#FFB94E' />
+          <div className={`meal_rating ${item > 0 ? 'added' : ''}`}>{rating}{quantity}</div>
+          <RiInformationLine className={`info ${item > 0 ? 'added' : ''}`} onClick={() => setZoom("1")} />
+        </div>
+        <div className={`meal_subtitle ${item > 0 ? 'added' : ''}`}>{disc}</div>
+        <div className="meal_price primary">₹{price}</div>
+        <AddMeal title={title} onGetItem={setItem} />
       </div>
     </>
   )

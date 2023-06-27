@@ -1,0 +1,17 @@
+.nutrition {
+  display: inline-block;
+  margin: 0 15.1% 0 0;
+}
+@media screen and (max-width: 1200px) {.nutrition{margin: 0 19.3% 0 0}}
+@media screen and (max-width: 1000px) {.nutrition{margin: 0 17.3% 0 0}}
+@media screen and (max-width: 800px) {.nutrition{margin: 0 15.3% 0 0}}
+@media screen and (max-width: 600px) {.nutrition{margin: 0 13.3% 0 0}}
+.value {
+  font-size: 15px;
+  font-weight: 800;
+  padding: 10px 0 0 0
+}
+.category {
+  font-size: 13px;
+  font-weight: 600
+}

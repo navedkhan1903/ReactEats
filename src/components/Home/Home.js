@@ -1,22 +1,26 @@
-import { useState } from 'react';
-import LoginSignup from './LoginSignup';
 import './Home.css';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import LoginSignup from './LoginSignup';
 
-export default function Home() {
+export default function Home({ onLoginStatus }) {
+  const [login, setLogin] = useState(false);
   const [getStarted, setGetStarted] = useState(false);
-  function getStartedHandler() { setGetStarted(true); }
+  onLoginStatus(login);
 
   return (
     <div className="home">
-      <div className='home_content'>
+      <div className='home_content centered'>
         <center>
-          <div className='home_title'>React<span className='eats'>Eats</span></div>
-          <div className='home_sub'>Get your favourite meal delivered<br />at your doorstep.</div>
-          <button className='home_button' onClick={getStartedHandler}>Get Started</button>
+          <div className='home_title primary'>React<span className='eats'>Eats</span></div>
+          <div className='home_sub sec'>Get your favourite meal delivered<br />at your doorstep.</div>
+          <Link to="/Auth">
+            <button className='home_button' onClick={() => setGetStarted(true)}>Get Started</button>
+          </Link>
         </center>
       </div>
-      <div className={`${getStarted ? 'image_modal_active' : 'image_modal'}`}>
-        <LoginSignup />
+      <div className={`${getStarted ? 'modal_active' : 'modal'}`}>
+        <LoginSignup onLoginStatus={(props) => setLogin(props)} />
       </div>
     </div>
   )

@@ -6,13 +6,7 @@
   overflow: hidden
 }
 .home_content {
-  animation-duration: 1s;
-  animation-name: home_moveup;
-  animation-timing-function: ease;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%,-50%);
+  animation: home_moveup 1s ease;
   width: 100vw
 }
 @keyframes home_moveup {
@@ -20,7 +14,6 @@
   to {margin: 0; opacity: 1;}
 }
 .home_title {
-  color: #323142;
   font-size: 60px;
   font-weight: 600
 }
@@ -28,7 +21,6 @@
   font-weight: 800
 }
 .home_sub {
-  color: grey;
   font-size: 18px
 }
 .home_button {
@@ -37,7 +29,6 @@
   border: none;
   border-radius: 30px;
   font-size: 20px;
-  font-weight: 500;
   margin: 20px 0 0;
   padding: 15px 0;
   width: 200px

@@ -1,0 +1,76 @@
+.col-xl-6 {
+  padding: 0;
+}
+.disc {
+  background-color: white;
+  border-radius: 30px;
+  padding: 50px 0 50px 50px;
+  width: 80vw
+}
+.disc::-webkit-scrollbar {
+  width: 7px;
+}
+.disc::-webkit-scrollbar-thumb {
+  background-color: #bfbfbf;
+  border-radius: 5px;
+}
+@media screen and (max-width:1200px) {.disc{height: 90vh; overflow-y: scroll; overflow-x: hidden;}}
+.left {
+  border-right: 1px solid #bfbfbf;
+}
+@media screen and (max-width:1200px) {.left{border-right: 0;}}
+.type {
+  margin: 0 0 0 10px
+}
+.disc_img {
+  margin: 0 0 40px 0;
+}
+.disc_title {
+  font-size: 30px;
+  font-weight: 700;
+  padding: 0 71px 0 0
+}
+.disc_stars {
+  display: inline;
+  padding: 0 10px 0 0
+}
+.disc_rating {
+  font-size: 13px;
+  display: inline
+}
+.disc_disc {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 40px 50px 40px 0
+}
+.disc_close {
+  background-color: #fff;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 0 10px gray;
+  height: 26px;
+  padding: 5px 0 30px 0;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  width: 34px
+}
+@media screen and (max-width:1200px) {.disc_close{right: 20px; top: 20px;}}
+.cross:hover {
+  background-color: #e0e0e0;
+  color: #323142;
+  transition-duration: 0.2s
+}
+.right {
+  height: 570px;
+  overflow-y: scroll;
+  padding: 0 50px 0 50px
+}
+@media screen and (max-width:1200px) {.right{height: auto; padding: 50px 50px 0 0;}}
+.right::-webkit-scrollbar {
+  width: 7px;
+}
+.right::-webkit-scrollbar-thumb {
+  background-color: #bfbfbf;
+  border-radius: 5px;
+}

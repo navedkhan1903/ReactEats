@@ -1,0 +1,27 @@
+.order_placed {
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 55px;
+  width: 380px
+}
+.order_placed_pri {
+  font-size: 20px;
+  font-weight: 800;
+  padding: 25px 0 0;
+}
+.order_placed_sec {
+  font-size: 15px;
+  padding: 25px 0 0;
+}
+.cross {
+  background-color: #fff;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 0 10px gray;
+  height: 26px;
+  padding: 5px 0 30px 0;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  width: 34px;
+}
