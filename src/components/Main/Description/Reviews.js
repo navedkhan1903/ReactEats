@@ -14,7 +14,7 @@ export default function Reviews({ name }) {
       setLoading("1");
       // const fetchUrl = 'https://reacteats-884d9-default-rtdb.firebaseio.com/';
       // const response = await fetch(fetchUrl + 'reviews/' + name + '/.json');
-      const response = await fetch("https://react-eats-backend-4zq8asb3b-naved-khans-projects.vercel.app/Main/" + name);
+      const response = await fetch("https://react-eats-backend-naved.vercel.app/Main/" + name);
       const data = await response.json();
       const reviewsArr = [];
       for (const key in data) {

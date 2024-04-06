@@ -3,7 +3,7 @@ export async function getData(setLoading, setHistory) {
   // const fetchUrl = 'https://reacteats-884d9-default-rtdb.firebaseio.com/';
   // const response = await fetch(fetchUrl + localStorage.getItem("id") + '/history.json');
   try {
-    const response = await fetch("https://react-eats-backend-4zq8asb3b-naved-khans-projects.vercel.app/History/" + localStorage.getItem("id"));
+    const response = await fetch("https://react-eats-backend-naved.vercel.app/History/" + localStorage.getItem("id"));
     const data = await response.json();
     const historyArr = [];
     for (const key in data) {

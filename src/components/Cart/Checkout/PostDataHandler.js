@@ -6,7 +6,7 @@ export async function postDataHandler(setPlaceOrder, items, grand, setCoupon, se
   // const fetchUrl = 'https://reacteats-884d9-default-rtdb.firebaseio.com/';
   // await fetch(fetchUrl + localStorage.getItem("id") + '/history.json', { method: 'POST', body: JSON.stringify(postData) })
   try {
-    await fetch("https://react-eats-backend-4zq8asb3b-naved-khans-projects.vercel.app/Cart", {
+    await fetch("https://react-eats-backend-naved.vercel.app/Cart", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: postData,
