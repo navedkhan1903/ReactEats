@@ -1,13 +1,3 @@
-# ReactEats - Online Food Ordering Web App
-
-ReactEats is an innovative online food ordering web application designed to simplify the process of ordering food from various restaurants. Built using the MERN stack, along with CSS and Bootstrap for styling, ReactEats offers a seamless user experience, combining powerful functionality with an intuitive interface.
-
-Backend: https://github.com/navedkhan1903/ReactEatsBackend
-
-## Live Link
-
-https://reacteats-884d9.web.app/
-
 ## Tech Stack
 
 **Frontend Technologies:**
